@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using HospitalManagementSystem.Models;
 
 namespace HospitalManagementSystem.Services
@@ -9,14 +10,14 @@ namespace HospitalManagementSystem.Services
     /// </summary>
     public class PatientService
     {
-        private readonly DataService _dataService;
+        private readonly JsonDataService _dataService;
 
         /// <summary>
         /// 생성자
         /// </summary>
         public PatientService()
         {
-            _dataService = new DataService();
+            _dataService = new JsonDataService();
         }
 
         /// <summary>
